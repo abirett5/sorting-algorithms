@@ -32,6 +32,7 @@ var merge = function(intervals) {
     const endIndex = 1;
 
     intervals.sort((a, b) => a[startIndex] - b[startIndex]);
+    
     const mergedIntervals = [];
     let mergeStart = intervals[0][startIndex];
     let mergeEnd = intervals[0][endIndex];
